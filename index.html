@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -8,11 +9,40 @@
 			body {
 				background: #000;	
 			}
-			.image {
+			iframe {
+				border: none;
+			}
+			.background-container {
+				overflow:hidden; 
+				position: fixed; 
+				top: -50%; 
+				left: -50%; 
+				width: 200%; 
+				height: 200%; 
+				-webkit-filter: blur(5px);
+			}
+			.background-image {
+				position: absolute; 
+				top: 0; 
+				left: 0; 
+				right: 0; 
+				bottom: 0; 
+				margin: auto; 
+				min-width: 50%; 
+				min-height: 50%;
+			}
+			.anthax {
+				position: absolute; 
+				top: 50%; left: 50%; 
+				width: 351px; 
+				height: 512px; 
+				margin-top: -256px; 
+				margin-left: -175px;
+				
 				-webkit-animation:spin 4s linear infinite;
 				-moz-animation:spin 4s linear infinite;
 				animation:spin 4s linear infinite; 
-			} 
+			}
 			@-moz-keyframes spin {
 				100% {
 				    -moz-transform: rotate(360deg); 
@@ -32,7 +62,10 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	</head>
 	<body>
-	<img class="image" style="position: absolute; top: 50%; left: 50%; width: 351px; height: 512px; margin-top: -256px; margin-left: -175px;"src="anthax.png" alt="omg">
-	<!--iframe width="0" height="0" src="http://www.youtube.com/embed/ZbVS5Otptj8?autoplay=1&loop=1&playlist=ZbVS5Otptj8"></iframe-->
+	<div class="background-container">
+		<img class="background-image" src="https://media3.giphy.com/media/oSYflamt3IEjm/giphy.gif" alt="haking ur pc ;)">
+	</div>
+	<img class="anthax" src="anthax.png" alt="omg">
+	<iframe width="0" height="0" src="http://www.youtube.com/embed/bSFDRhFReRk?autoplay=1&loop=1&playlist=bSFDRhFReRk"></iframe>
 	</body>
 </html>
